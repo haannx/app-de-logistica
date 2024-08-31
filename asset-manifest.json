@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/app-de-logistica/static/js/main.4ef2d491.js",
+    "static/js/453.47dc7ef9.chunk.js": "/app-de-logistica/static/js/453.47dc7ef9.chunk.js",
+    "index.html": "/app-de-logistica/index.html",
+    "main.4ef2d491.js.map": "/app-de-logistica/static/js/main.4ef2d491.js.map",
+    "453.47dc7ef9.chunk.js.map": "/app-de-logistica/static/js/453.47dc7ef9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.4ef2d491.js"
+  ]
+}
