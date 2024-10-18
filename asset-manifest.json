@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/app-de-logistica/static/js/main.a79997b2.js",
+    "main.js": "/app-de-logistica/static/js/main.96635573.js",
     "static/js/453.47dc7ef9.chunk.js": "/app-de-logistica/static/js/453.47dc7ef9.chunk.js",
     "index.html": "/app-de-logistica/index.html",
-    "main.a79997b2.js.map": "/app-de-logistica/static/js/main.a79997b2.js.map",
+    "main.96635573.js.map": "/app-de-logistica/static/js/main.96635573.js.map",
     "453.47dc7ef9.chunk.js.map": "/app-de-logistica/static/js/453.47dc7ef9.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.a79997b2.js"
+    "static/js/main.96635573.js"
   ]
 }
