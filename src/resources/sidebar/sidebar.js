@@ -68,7 +68,7 @@ const SidebarConfig = ({ isOpen }) => {
       <SidebarItem isOpen={isOpen} onClick={() => handleItemClick('Estoque')}>Estoque</SidebarItem>
       {isOpen && whenClick === 'Estoque' && (
         <>
-        <SidebarSubItem isOpen={isOpen}>Cadastro de Produtos</SidebarSubItem>
+        <SidebarSubItem isOpen={isOpen} onClick={() => handleSubItemClick('/cadastroprodutos')}>Cadastro de Produtos</SidebarSubItem>
         <SidebarSubItem isOpen={isOpen} onClick={() => handleSubItemClick('/consultarprodutos')}>Consulta de Produtos</SidebarSubItem>
         </>
       )}

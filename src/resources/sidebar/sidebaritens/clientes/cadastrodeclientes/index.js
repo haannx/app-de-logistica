@@ -13,8 +13,6 @@ const Container = styled.div`
     max-width: 1000px;
     margin: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
     margin-left: 50px;
 `
 const TitulosPrincipal = styled.h1`
@@ -34,6 +32,11 @@ const Input = styled.input`
     color: #fff;
     width: 600px;
 `
+const Label = styled.label`
+  width: 120px;
+  color: #fff;
+  display: inline-block; 
+`
 const Button = styled.button`
     padding: 10px;
     background-color: #28a745;
@@ -50,6 +53,7 @@ const Button = styled.button`
 `
 const Descricao = styled.div`
     color: #99AFBB;
+    
 `
 
 const CadastroClientes = () => {
@@ -132,45 +136,45 @@ const CadastroClientes = () => {
         <Container>
           <Titulos>Dados Básicos</Titulos>  
           <Descricao>
-            <label>Nome: </label>
+            <Label>Nome: </Label>
             <Input type="text" name="nome" value={formData.nome} onChange={handleChange} required />
           </Descricao>
           <Descricao>
-            <label>CPF ou CNPJ: </label>
+            <Label>CPF ou CNPJ: </Label>
             <Input type="text" name="cpf" value={formData.cpf} onChange={handleChange} required />
           </Descricao>
           <Descricao>
-            <label>Observações: </label>
+            <Label>Observações: </Label>
             <Input type="text" name="observacoes" value={formData.observacoes} onChange={handleChange} />
           </Descricao>
         </Container>
         <Container>
           <Titulos>Endereço</Titulos>
           <Descricao>
-            <label>Endereço: </label>
+            <Label>Endereço: </Label>
             <Input type='text' name='endereco' value={formData.endereco} onChange={handleChange} required />
           </Descricao>
           <Descricao>
-            <label>Bairro: </label>
+            <Label>Bairro: </Label>
             <Input type='text' name='bairro' value={formData.bairro} onChange={handleChange} required />
           </Descricao>
           <Descricao>
-            <label>Nº: </label>
+            <Label>Nº: </Label>
             <Input type='text' name='numero' value={formData.numero} onChange={handleChange} required />
           </Descricao>
           <Descricao>
-            <label>Complemento: </label>
+            <Label>Complemento: </Label>
             <Input type='text' name='complemento' value={formData.complemento} onChange={handleChange} />
           </Descricao>
         </Container>
         <Container>
           <Titulos>Contatos</Titulos>
           <Descricao>
-            <label>Email: </label>
+            <Label>Email: </Label>
             <Input type='email' name='email' value={formData.email} onChange={handleChange} required />
           </Descricao>
           <Descricao>
-            <label>Telefone: </label>
+            <Label>Telefone: </Label>
             <Input type='text' name='telefone' value={formData.telefone} onChange={handleChange} required />
           </Descricao>
         </Container>
