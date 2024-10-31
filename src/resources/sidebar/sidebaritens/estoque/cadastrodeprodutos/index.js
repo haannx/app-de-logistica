@@ -117,7 +117,7 @@ function CadastroProdutos() {
             data: ''
         })
 
-        alert('Produto cadastrado com sucesso!')
+        alert(`Produto cadastrado com sucesso no id ${maxId + 1}!`)
     }
 
     return (
@@ -128,22 +128,11 @@ function CadastroProdutos() {
                     <Titulos>Dados Básicos</Titulos>  
                     <Descricao>
                         <Label>Descrição: </Label>
-                        <Input 
-                            type="text" 
-                            name="descricao" 
-                            value={formData.descricao} 
-                            onChange={handleChangeCadastros} 
-                            required
-                        />
+                        <Input type="text" name="descricao" value={formData.descricao} onChange={handleChangeCadastros} required/>
                     </Descricao>
                     <Descricao>
                         <Label>Marca: </Label>
-                        <Select 
-                            name="marca" 
-                            value={formData.marca} 
-                            onChange={handleChangeCadastros} 
-                            required
-                        >
+                        <Select name="marca" value={formData.marca} onChange={handleChangeCadastros} required>
                             <Option value="" disabled>Selecione uma marca</Option>
                             <Option value="CASUMINA">CASUMINA</Option>
                             <Option value="XBRI">XBRI</Option>

@@ -126,7 +126,7 @@ const CadastroClientes = () => {
       complemento: ''
     })
 
-    alert('Cliente cadastrado com sucesso!')
+    alert(`Cliente cadastrado com sucesso no id ${maxId + 1}`)
   }
 
   return (

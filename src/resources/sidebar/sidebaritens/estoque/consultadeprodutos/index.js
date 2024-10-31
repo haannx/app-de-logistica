@@ -39,13 +39,13 @@ const Tabela = styled.table`
     border-collapse: collapse;
     margin-top: 20px;
 `
-const Th = styled.th`
+const InfoName = styled.th`
     background-color: #333;
     color: #fff;
     padding: 10px;
     border: 1px solid #ccc;
 `
-const Td = styled.td`
+const Filtro = styled.td`
     padding: 10px;
     border: 1px solid #ccc;
     color: #fff;
@@ -84,60 +84,37 @@ function ConsultaProdutos() {
     <ContainerGeral>
       <TituloPrincipal>Consulta de Produtos</TituloPrincipal>
       <Container>
-        <InputPesquisa
-          type="text"
-          placeholder="Pesquise por ID, descrição ou marca..."
-          value={searchTerm}
-          onChange={handleSearchChange}
-        />
+        <InputPesquisa type="text" placeholder="Pesquise por ID, descrição ou marca..." value={searchTerm}onChange={handleSearchChange}/>
 
         <CheckboxContainer>
           <CheckboxLabel>
-            <CheckBox
-              type="checkbox"
-              checked={searchById}
-              onChange={(e) => setSearchById(e.target.checked)}
-            /> 
-            ID
-          </CheckboxLabel>
+            <CheckBox type="checkbox" checked={searchById}onChange={(e) => setSearchById(e.target.checked)}/>ID</CheckboxLabel>
           <CheckboxLabel>
-            <CheckBox
-              type="checkbox"
-              checked={searchByDescricao}
-              onChange={(e) => setSearchByDescricao(e.target.checked)}
-            /> 
-            Descrição
-          </CheckboxLabel>
+            <CheckBox type="checkbox" checked={searchByDescricao}onChange={(e) => setSearchByDescricao(e.target.checked)}/>Descrição</CheckboxLabel>
           <CheckboxLabel>
-            <CheckBox
-              type="checkbox"
-              checked={searchByMarca}
-              onChange={(e) => setSearchByMarca(e.target.checked)}
-            /> 
-            Marca
-          </CheckboxLabel>
+            <CheckBox type="checkbox" checked={searchByMarca}onChange={(e) => setSearchByMarca(e.target.checked)}/>Marca</CheckboxLabel>
         </CheckboxContainer>
 
         <Tabela>
           <thead>
             <tr>
-              <Th>ID</Th>
-              <Th>Descrição</Th>
-              <Th>Marca</Th>
+              <InfoName>ID</InfoName>
+              <InfoName>Descrição</InfoName>
+              <InfoName>Marca</InfoName>
             </tr>
           </thead>
           <tbody>
             {produtosFiltrados.length > 0 ? (
               produtosFiltrados.map((produto) => (
                 <tr key={produto.id}>
-                  <Td>{produto.id}</Td>
-                  <Td>{produto.descricao}</Td>
-                  <Td>{produto.marca}</Td>
+                  <Filtro>{produto.id}</Filtro>
+                  <Filtro>{produto.descricao}</Filtro>
+                  <Filtro>{produto.marca}</Filtro>
                 </tr>
               ))
             ) : (
               <tr>
-                <Td colSpan="3">Nenhum produto encontrado</Td>
+                <Filtro colSpan="3">Nenhum produto encontrado</Filtro>
               </tr>
             )}
           </tbody>
